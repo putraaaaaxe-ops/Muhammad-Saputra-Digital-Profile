@@ -1,0 +1,3 @@
+function cetakCV() {
+    window.print();
+}

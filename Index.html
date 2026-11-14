@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muhammad Saputra | Digital Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#home" class="logo">Muhammad Saputra</a>
+
+        <nav>
+            <a href="#home">About</a>
+            <a href="#pendidikan">Education</a>
+            <a href="#skill">Skills</a>
+            <a href="#sertifikat">Certificates</a>
+            <a href="#proyek">Projects</a>                                                                                                  
+            <a href="#kontak">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main>  
+        <section id="home" class="hero">
+
+            <div class="hero-text">
+                <span class="status">
+                    <span class="dot"></span>
+                    Pelajar SMK Informatika
+                </span>
+
+                <h1>
+                    Building Digital
+                    <span>Experiences</span>
+                    That Matter
+                </h1>
+
+                <p>
+                    Halo, saya <strong>Putra</strong>.
+                    Saya adalah pelajar SMK yang tertarik
+                    pada pemrograman, desain web, dan teknologi digital.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#proyek" class="btn-primary">
+                         Liat proyek →
+                    </a>
+
+                    <button class="btn-secondary" onclick="cetakCV()">
+                        cetak cv ↓ 
+                    </button>
+                </div>
+
+                <div class="social-links">
+                    <a href="#kontak">GitHub</a>
+                    <a href="#kontak">Kontak</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="glow"></div>
+
+                <!-- Ganti foto.jpg dengan foto milikmu -->
+                <img
+                    src="G2 profil.jpeg"
+                    alt="Foto profil Putra"
+                    class="profile-photo"
+                >
+
+                <div class="info-card top-card">
+                    <span class="info-icon">🎓</span>
+                    <div>
+                        <strong>SMK Student</strong>
+                        <p>Pelajar bidang Rekayasa Perangkat Lunak</p>
+                    </div>
+                </div>
+
+                <div class="info-card bottom-card">
+                    <div>
+                        <strong>My Journey</strong>
+                        <p>Belajar dan membangun proyek digital.</p>
+                    </div>
+                    <span class="code-icon">&lt;/&gt;</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ABOUT -->
+        <section class="content-section" id="tentang">
+            <div>
+                <span class="section-label">Tentang Saya</span>
+                <h2>Siapa Saya?</h2>
+            </div>
+
+            <p>
+                Saya adalah pelajar SMK 6 Kendari yang ingin mengembangkan
+                kemampuan di bidang teknologi.
+                Saya senang belajar coding, mencoba hal baru,
+                dan membuat proyek website.
+            </p>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="content-section" id="pendidikan">
+            <div>
+                <span class="section-label">Perjalanan Belajar</span>
+                <h2>Pendidikan</h2>
+            </div>
+
+            <div class="detail-card">
+                <h3>SMK 6 KENDARI</h3>
+                <p>REKAYASA PERANGKAT LUNAK</p>
+                <p>[2025] – Sekarang</p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="content-section" id="skill">
+            <div>
+                <span class="section-label">Kemampuan</span>
+                <h2>My Skills</h2>
+            </div>
+
+            <div class="skill-list">
+                <div class="detail-card">
+                    <h3>HTML</h3>
+                    <p>Struktur halaman website</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>CSS</h3>
+                    <p>Desain dan tata letak website</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>JavaScript</h3>
+                    <p>Interaksi pada website</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Database</h3>
+                    <p>Dasar pengelolaan data</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATES -->
+        <section class="content-section" id="sertifikat">
+            <div>
+                <span class="section-label">Pencapaian</span>
+                <h2>Certificates</h2>
+            </div>
+
+            <div class="detail-card">
+                <p>Sertifikat akan ditambahkan di sini.</p>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="content-section" id="proyek">
+            <div>
+                <span class="section-label">Hasil Karya</span>
+                <h2>My Projects</h2>
+            </div>
+
+            <div class="detail-card">
+                <h3>Website CV Digital</h3>
+                <p>
+                    Proyek website portofolio pribadi
+                    menggunakan HTML, CSS, dan JavaScript.
+                </p>
+            </div>
+        </section>
+
+        <!-- DIGITAL CV -->
+        <section class="content-section" id="cv">
+            <div>
+                <span class="section-label">Curriculum Vitae</span>
+                <h2>CV Digital Saya</h2>
+            </div>
+
+            <div class="detail-card cv-card">
+                <h3>Muhammad Saputra</h3>
+                <p>Pelajar SMK | Calon Web Developer</p>
+                <p>Email: putraaaaaxe@gmail.com</p>
+                <p>Pendidikan: Smk 6 Kendari, Rekayasa Perangkat Lunak</p>
+                <p>Keahlian: HTML, CSS, JavaScript, Database</p>
+
+                <button class="btn-primary" onclick="cetakCV()">
+                    Cetak / Simpan PDF
+                </button>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="content-section" id="kontak">
+            <div>
+                <span class="section-label">Hubungi Saya</span>
+                <h2>Let's Connect</h2>
+            </div>
+
+            <p>
+                Email:  putraaaaaxe@gmail.com
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> 2026 Muhammad Saputra.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
